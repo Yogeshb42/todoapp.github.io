@@ -53,4 +53,4 @@ def update(no):
     return render_template('update.html',todo=todo)
 
 if __name__ == '__main__':
-    app.run()
+    app.run(port=8080)
