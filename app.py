@@ -57,5 +57,3 @@ def products():
     allTodo = Todo.query.all()
     print(allTodo)
     return 'This is product page.'
-
-app.run()
