@@ -51,6 +51,3 @@ def update(no):
 
     todo = Todo.query.filter_by(no=no).first()
     return render_template('update.html',todo=todo)
-
-if __name__ == '__main__':
-    app.run(port=8080)
