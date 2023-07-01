@@ -52,8 +52,5 @@ def update(no):
     todo = Todo.query.filter_by(no=no).first()
     return render_template('update.html',todo=todo)
 
-@app.route('/show')
-def products():
-    allTodo = Todo.query.all()
-    print(allTodo)
-    return 'This is product page.'
+if __name__ == '__main__':
+    app.run()
